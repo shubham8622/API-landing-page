@@ -1,0 +1,303 @@
+/* POPPINS FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header {background-color: #4617fe;}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 35px;
+}
+
+nav a {
+  padding: 5px 15px;
+  color: #ffffff;
+}
+
+a.nav-item-active {
+  background-color: #ffffff;
+  border-radius: 6px;
+  color: #886afc;
+}
+svg.nav-item {
+  width: 70px;
+  height: 25px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-text .head-content h2 {
+  /* margin: 0 0; */
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.head-content p {
+  color: #ffffff;
+  padding-top: 10px;
+  letter-spacing: 2px;
+  word-spacing: 1px;
+}
+
+.header-text div:last-child {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  width: 45%;
+  height: 70%;
+}
+
+.header-text div:last-child img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+
+.head-content {
+  margin: 70px 0 10% 0;
+}
+section {
+  background-color: #f8f8fa;
+  padding-bottom: 45px;
+}
+h1.api-heading {
+  font-size: 50px;
+}
+.companies a {
+  display: inline-block;
+  padding: 20px 85px 20px 0;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 800;
+  font-size: 20px;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.cards div.card {
+  margin-top: 50px;
+  padding: 35px 10px;
+}
+.cards div.card-active {
+  margin-top: 50px;
+  padding: 35px 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.blog-heading h1 {
+  font-size: 50px;
+  padding: 0 0 30px 0;
+  font-weight: 800;
+}
+
+.blog-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.blog-card {
+  flex: 1;
+}
+
+.blog-content-cs {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-right: 35px;
+}
+.blog-bottom {
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 25%;
+}
+
+.blog-author {
+    display: inline-block;
+    position: relative;
+    top: 17px;
+    left: 15px;
+}
+
+.blog-bottom-cs {
+    padding: 10px 35px;
+    background-color: #ffffff;
+    border-radius: 0 30px 30px 0;
+}
+
+.blog-content h3 {
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+.blog-content h6 {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.blog-content small {
+  font-size: 15px;
+  padding: 10px 0;
+}
+section.cs-section {
+  background-color: #e9edff;
+}
+
+.faq-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.cs-section {
+  background-color: #e9edff;
+}
+
+.faq-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-content h2 {
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.faq-content h4:nth-child(2) {
+  font-size: 15px;
+  padding: 15px 0;
+}
+
+.faq-content h4:nth-child(3) {
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.faq-content button {
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #5a31fc;
+  color: #ffffff;
+}
+.faq-image {
+  position: absolute;
+  right: 0;
+  top: 215%;
+
+}
+
+section.cs-download-section {
+  background-color: #ffffff;
+}
+
+.download-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0 55px 0;
+  /* border: 2px solid green; */
+  align-items: center;
+}
+
+footer {
+  background-color: #4718fd;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 0 25px 0;
+}
+
+ul.list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 20px 0;
+}
+
+li.list-items {
+  padding: 10px 20px 25px 0;
+  color: #ffffff;
+}
+
+ul.logos-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 20px 0;
+}
+
+.download-content h1 {
+  font-weight: 800;
+  font-size: 35px;
+}
+
+.download-content span {
+  font-weight: 100;
+}
+
+.download-content h1 {
+  font-weight: 800;
+  font-size: 35px;
+}
+
+.download-content span {
+  font-weight: 100;
+}
+
+.download-email {
+  width: 30%;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+  background-color: #e9edff;
+}
+
+.download-email button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-color: #4718fd;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 25px;
+}
