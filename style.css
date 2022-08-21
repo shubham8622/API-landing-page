@@ -8,296 +8,487 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
+:root{
+    font-size: 10px;
+    --header-bg:#4617fe;
 }
-
-header {background-color: #4617fe;}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 35px;
+.bars{
+  display: none;
 }
-
-nav a {
-  padding: 5px 15px;
-  color: #ffffff;
+img{
+  max-width: 100%;
 }
-
-a.nav-item-active {
-  background-color: #ffffff;
-  border-radius: 6px;
-  color: #886afc;
-}
-svg.nav-item {
-  width: 70px;
-  height: 25px;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header-text {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-text .head-content h2 {
-  /* margin: 0 0; */
-  font-size: 50px;
-  color: #ffffff;
-}
-
-.head-content p {
-  color: #ffffff;
-  padding-top: 10px;
-  letter-spacing: 2px;
-  word-spacing: 1px;
-}
-
-.header-text div:last-child {
+header{
   position: absolute;
-  right: 0;
-  top: 100px;
-  width: 45%;
-  height: 70%;
-}
-
-.header-text div:last-child img {
   width: 100%;
-  height: 100%;
-  position: absolute;
-  right: 0;
+}
+.container{
+  max-width: 140rem;
+  margin-inline: auto;
+  padding:0 1rem;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
 }
 
-.head-content {
-  margin: 70px 0 10% 0;
+.header-logo{
+  width: 10rem;
 }
-section {
-  background-color: #f8f8fa;
-  padding-bottom: 45px;
+.header-nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  list-style: none;
 }
-h1.api-heading {
-  font-size: 50px;
-}
-.companies a {
-  display: inline-block;
-  padding: 20px 85px 20px 0;
+
+.header-nav ul li a{
   text-decoration: none;
-  color: #000000;
-  font-weight: 800;
-  font-size: 20px;
-}
-.cards {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.cards div.card {
-  margin-top: 50px;
-  padding: 35px 10px;
-}
-.cards div.card-active {
-  margin-top: 50px;
-  padding: 35px 10px;
-  background-color: #ffffff;
-  border-radius: 10px;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-size: 1.5rem;
 }
 
-.blog-heading h1 {
-  font-size: 50px;
-  padding: 0 0 30px 0;
-  font-weight: 800;
+.header-nav ul li:last-child{
+  color: #ffffff;
+  font-size: 1.5rem;
 }
 
-.blog-cards {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.blog-card {
-  flex: 1;
+section.hero-section{
+  background-color: var(--header-bg);
+  color: #ffffff;
 }
 
-.blog-content-cs {
+.hero-banner{
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  margin-right: 35px;
+  justify-content: space-between;
+  align-items: center;
 }
-.blog-bottom {
-    background-color: #ffffff;
-    border-radius: 50%;
-    display: inline-block;
+
+ .hero-content{
+  max-width:70rem
+} 
+.hero-content h1{
+  font-size: 5rem;
+}
+.hero-content p{
+  font-size: 1.5rem;
+}
+.company{
+  background-color: #f8f8fa;
+}
+.company-name{
+  max-width: 70rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+.company-name h2{
+  font-weight: 900;
+}
+h1.api-heading {
+  max-width: 20rem;
+  font-weight: 900;
+}
+.api{
+  display: grid;
+}
+.api-service h1{
+  text-transform: capitalize;
+  max-width: 20rem;
+}
+.latest-blogs{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+.blog-listing{
+  display: grid;
+}
+.admin-name{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.admin-name h3{
+  font-weight: 900;
+}
+.question-section{
+  background-color: #e9edff;
+  /* padding: 5rem 0; */
+}
+.question{
+  display: grid;
+}
+.download-email{
+  display: flex;
+  align-items: center;
+}
+footer{
+  background-color: #4617fe;
+  padding: 5rem 0;
+}
+/* Responsive start*/
+@media only screen and (min-width:320px) {
+    .header-nav{
+      display: none;
+    }
+    .bars{
+      display: block;
+      color: #ffffff;
+      font-size: 1.5rem;
+    }
+    .hero-banner{
+      flex-direction: column;
+    }
+    .hero-content{
+      align-self: flex-start;
+    }
+    .hero-content h1{
+      font-size: 2.5rem;
+    }
+    .hero-content p{
+      margin: 1rem 0;
+      font-size: 1.5rem;
+    }
+    .hero-image{
+      align-self: flex-end;
+    }
+    .hero-section{
+      padding-top: 10rem;
+    }
+    .company{
+      padding: 3rem 0;
+    }
+    .api-heading{
+      margin:3rem 0;
+      font-size: 2.5rem;
+    }
+    .api{
+      grid-template-columns: repeat(1,1fr);
+      gap: 4rem;
+    }
+    .api-image{
+      max-width: 5rem;
+    }
+    .api-service h1{
+      font-size: 2rem;
+      font-weight: 900;
+      margin-top: 1rem;
+
+    }
+    .api-service p{
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+    .api-service{
+      padding: 3rem 1rem;
+      border-radius: 1rem;
+    }
+    .api-service.active{
+      background-color: #ffffff;
+    }
+    .last-arrow{
+      display: none;
+    }
+
+    .blogs{
+      padding: 5rem 0;
+    }
+    .latest-blogs{
+      grid-template-columns: repeat(1, 1fr);
+      gap:3rem;
+    }
+    .blogs-heading h2{
+      font-size: 1.9rem;
+    }
+    .all-articles{
+      margin-bottom: 2rem;
+    }
+    .all-articles a{
+      font-size: 1.5rem;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+    .blog .blog-image{
+      width: 30rem;
+    }
+    .blog-content span{
+      display: inline-block;
+      margin-top:1rem;
+      font-size: 1.3rem;
+      font-weight: 800;
+    }
+    .blog-content h2{
+      margin: 1rem 0;
+      font-size: 2rem;
+    }
+    .blog-content p{
+      font-size: 1.3rem;
+    }
+    .blog-listing{
+      grid-template-columns: repeat(1,1fr);
+      gap: 3rem;
+    }
+    .admin-name{
+      margin: 1.5rem 0;
+    }
+    .question{
+      grid-template-columns: repeat(1,1fr);
+      gap: 5rem;
+    }
+    .question-image{
+      width: 30rem;
+      justify-self:end;
+    }
+    .question-content h1{
+      font-size: 2.5rem;
+    }
+    .question-content p{
+      margin: 2rem 0;
+      font-size: 1.3rem;
+    }
+    .question-content{
+      font-size: 1.5rem;
+    }
+    .contact a{
+      margin-top: 2rem;
+      display: inline-block;
+      text-decoration: none;
+      background-color: #4617fe;
+      color: #ffffff;
+      padding:1.5rem 3rem;
+      border-radius: 0.3rem;
+    }
+    .download-email{
+     flex-direction: column;
+     padding: 3rem 0;
+     gap: 5rem;
+    }
+    .download-content h2{
+      font-size: 3rem;
+    }
+    .download-content h2 span{
+      font-weight: 900;
+    }
+    .email{
+      text-align: center;
+    }
+    .download-content h2{
+      text-align: center;
+    }
+    .email input[type="email"]{
+      padding: 2rem 3rem;
+      background-color: #e9edff;
+      border: none;
+      width: 100%;
+      border-radius: 10rem;
+      align-self: flex-end;
+      outline: none;
+    }
+    .email input[type="submit"]{
+      background-color: #5a31fc;
+      border: none;
+      outline: none;
+      color: #ffffff;
+      padding: 1.5rem 2rem;
+      border-radius: 0.3rem;
+      margin: 1rem 0;
+      border-radius: 10rem;
+    }
+
+    .footer-nav p {
+      margin: 1rem 0;
+      font-size: 1.5rem;
+      color: #ffffff;
+  }
+  
+  .footer-nav ul {
+      display: flex;
+      justify-content: start;
+      flex-direction: row;
+      margin: 2rem 0;
+      list-style: none;
+      gap: 3rem;
+  }
+  
+  .footer-nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 1.5rem;
+      line-height: 3.5rem;
+  }
+  
+  ul.social-media {
+      display: flex;
+      justify-content: start;
+      align-items: self-start;
+      list-style: none;
+      gap: 3rem;
+  }
+  
+  ul.nav {
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      gap: 5rem;
+      list-style: none;
+      margin: 2rem 0;
+  }
+  
+  .nav li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 1.5rem;
+  }
+} 
+
+@media only screen and (min-width:768px) {
+  .hero-banner{
+    flex-direction: row;
+  }
+  .hero-content{
+    align-self: center;
+  }
+  .api{
+    grid-template-columns: repeat(2,1fr);
+    gap: 4rem;
+  }
+  h1.api-heading{
+    font-size: 3rem;
+    margin: 4rem 0;
+  }
+  .all-articles{
+    margin-left: auto;
+  }
+  .blog{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .latest-blogs{
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 5rem;
+  }
+  .question{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .question-image {
+    width: 35rem;
+  }
+  .email input{
+    align-self: flex-end;
+  }
+  .email input[type="email"]{
+    width: 50rem;
+  }
+  .email input[type="submit"]{
     position: relative;
-    top: 25%;
+    right: 11.5rem;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-nav {
+    display: flex;
+    /* justify-content: start; */
+    align-items: center;
+    gap: 3rem;
+  }
+  .blogs-heading h2{
+    font-size: 2.5rem;
+  }
 }
-
-.blog-author {
-    display: inline-block;
+@media only screen and (min-width:1024px) {
+  .bars{
+    display: none;
+  }
+  .header-nav{
+    display: block;
+  }
+  .hero-image{
     position: relative;
-    top: 17px;
-    left: 15px;
+    top: 7rem;
+  }
+  .hero-section{
+    padding-top:5rem;
+  }
+  .company-name{
+    max-width: 50rem;
+  }
+  .api{
+    grid-template-columns: repeat(4,1fr);
+    gap: 4rem;
+  }
+  .api-service h1{
+    max-width: 10rem;
+  }
+  .blog-listing{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .question-image {
+    width: 50rem;
+  }
+  .question-content h1{
+    font-size: 3.5rem;
+  }
+  .question-content p{
+    font-size: 1.5rem;
+  }
+  .question-content h3{
+    font-size: 2rem;
+  }
+  .download-email{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10rem 0;
+  }
+  .footer-nav p{
+    font-size: 1.8rem;
+  }
+  .footer-nav ul li a{
+    font-size: 1.8rem;
+  }
+  .nav li a{
+    font-size: 1.8rem;
+  }
 }
 
-.blog-bottom-cs {
-    padding: 10px 35px;
-    background-color: #ffffff;
-    border-radius: 0 30px 30px 0;
+@media only screen and (min-width:1280px) {
+  .hero-content h1{
+    font-size: 4rem;
+  }
+  .hero-content p{
+    font-size: 1.9rem;
+  }
+  .api{
+    grid-template-columns: repeat(5,1fr) 8rem;
+    gap: 4rem;
+  }
+  .api-service:last-child{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .arrow{
+    background-color: #5a31fc;
+    color: #ffffff;
+    border-radius: 10rem;
+    max-width: 3rem;
+    padding: 1rem 2.5rem;
+    font-size: 2rem;
+  }
+  h1.api-heading{
+    font-size: 4rem;
+    margin: 8rem 0;
+  }
 }
-
-.blog-content h3 {
-  font-size: 25px;
-  padding-top: 10px;
-}
-
-.blog-content h6 {
-  font-size: 15px;
-  font-weight: 800;
-}
-
-.blog-content small {
-  font-size: 15px;
-  padding: 10px 0;
-}
-section.cs-section {
-  background-color: #e9edff;
-}
-
-.faq-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-section.cs-section {
-  background-color: #e9edff;
-}
-
-.faq-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.faq-content h2 {
-  font-size: 45px;
-  font-weight: 800;
-}
-
-.faq-content h4:nth-child(2) {
-  font-size: 15px;
-  padding: 15px 0;
-}
-
-.faq-content h4:nth-child(3) {
-  font-weight: 800;
-  font-size: 18px;
-  margin-bottom: 15px;
-}
-
-.faq-content button {
-  padding: 15px 30px;
-  border-radius: 5px;
-  border: none;
-  background-color: #5a31fc;
-  color: #ffffff;
-}
-.faq-image {
-  position: absolute;
-  right: 0;
-  top: 215%;
-
-}
-
-section.cs-download-section {
-  background-color: #ffffff;
-}
-
-.download-section {
-  display: flex;
-  justify-content: space-between;
-  padding: 100px 0 55px 0;
-  /* border: 2px solid green; */
-  align-items: center;
-}
-
-footer {
-  background-color: #4718fd;
-}
-
-.footer-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 70px 0 25px 0;
-}
-
-ul.list {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  padding: 20px 0;
-}
-
-li.list-items {
-  padding: 10px 20px 25px 0;
-  color: #ffffff;
-}
-
-ul.logos-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  padding: 20px 0;
-}
-
-.download-content h1 {
-  font-weight: 800;
-  font-size: 35px;
-}
-
-.download-content span {
-  font-weight: 100;
-}
-
-.download-content h1 {
-  font-weight: 800;
-  font-size: 35px;
-}
-
-.download-content span {
-  font-weight: 100;
-}
-
-.download-email {
-  width: 30%;
-  position: relative;
-}
-
-input {
-  width: 100%;
-  padding: 15px;
-  border-radius: 50px;
-  border: none;
-  background-color: #e9edff;
-}
-
-.download-email button {
-  position: absolute;
-  right: 5px;
-  top: 5px;
-  background-color: #4718fd;
-  color: #ffffff;
-  border: none;
-  padding: 10px;
-  border-radius: 25px;
-}
+/* Responsive end */
